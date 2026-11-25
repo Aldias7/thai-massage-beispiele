@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chuan Thai- und Gesundheitsmassagen – Traditionelle Thai-Massage in Eisenhüttenstadt</title>
+<meta name="description" content="Traditionelle Thai-Massage in Eisenhüttenstadt: ruhig, von Hand und mit Zeit. Thai-Massage, Öl-Massage, Fußmassage, Kräuterstempel und Paar-Massage. Termin anfragen.">
+<meta name="theme-color" content="#e4e1da">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23e4e1da'/%3E%3Cg fill='%239c6b0f'%3E%3Cellipse cx='32' cy='30' rx='6' ry='16'/%3E%3Cellipse cx='32' cy='30' rx='6' ry='16' transform='rotate(40 32 46)'/%3E%3Cellipse cx='32' cy='30' rx='6' ry='16' transform='rotate(-40 32 46)'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="../schriften/ebgaramond.css">
+<!-- LADENNAME: „Chuan Thai- und Gesundheitsmassagen“, Kurzform „Chuan“. Zentral in den Konstanten LADENNAME/LADENVOLL ganz unten im Skript, dazu <title> und die Wortmarken (Kopfzeile, Gutschein, Fußzeile). -->
+<style>
+:root{
+  --bg:#e4e1da; --surface:#d6d2c9; --ink:#26241d; --muted:#57534a;
+  --accent:#9c6b0f; --accent-ink:#fdfcf9; --accent-hover:#7f550a;
+  --m:clamp(20px,6vw,100px);
+  --gap:clamp(12px,2vw,32px);
+  --f:'EB Garamond',Garamond,'Times New Roman',serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 clamp(1.2rem,1.1rem + .35vw,1.4rem)/1.5 var(--f);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+::selection{background:var(--accent);color:var(--accent-ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{text-wrap:balance;font-weight:400;letter-spacing:-.015em;line-height:1.02}
+h1{font-size:clamp(3rem,1rem + 8.4vw,9.6rem)}
+h2{font-size:clamp(2.5rem,1.2rem + 5.2vw,5.8rem)}
+p{max-width:40ch}
+em{font-style:italic}
+.wrap{padding-inline:var(--m)}
+section{padding-block:clamp(90px,12vw,220px)}
+.g{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+@media(min-width:900px){.g{grid-template-columns:repeat(12,1fr)}}
+figure{overflow:hidden;background:var(--surface)}
+figure img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 1.8em;background:var(--accent);color:var(--accent-ink);font:500 1.15rem/1 var(--f);text-decoration:none;border:0;border-radius:0;cursor:pointer;transition:background .35s,transform .4s var(--ease);letter-spacing:.01em}
+.btn:hover{background:var(--accent-hover);transform:translateY(-2px)}
+.btn:active{transform:none}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--bg)}
+.tl{color:var(--accent);text-decoration:underline;text-underline-offset:.3em;text-decoration-thickness:1.5px;transition:color .3s}
+.tl:hover{color:var(--accent-hover)}
+
+/* Ranken-Trenner und Laufband (eigene Grafik) */
+.orn{height:56px;background:url(bilder/ornament.svg) space no-repeat left center/auto 56px}
+.voucher .orn{grid-column:1/-1;margin-top:10px}
+.tick{overflow:hidden;background:var(--ink);color:var(--bg);padding-block:clamp(22px,3vw,44px)}
+.trk{display:flex;align-items:center;width:max-content;animation:run 46s linear infinite}
+.tick:hover .trk{animation-play-state:paused}
+.trk span{font-size:clamp(2.2rem,1rem + 4.4vw,5rem);font-style:italic;line-height:1.1;letter-spacing:-.015em;white-space:nowrap}
+.trk svg{width:clamp(30px,3.4vw,52px);height:clamp(30px,3.4vw,52px);color:#e8b64f;margin-inline:clamp(26px,3.4vw,60px);flex:none}
+@keyframes run{to{transform:translateX(-50%)}}
+@keyframes rise{from{opacity:0;transform:translateY(.1em)}}
+.hero h1{animation:rise 1.4s var(--ease) .1s both}
+
+/* Kopf */
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px var(--m);position:relative;z-index:20}
+.brand{font-size:2rem;font-style:italic;text-decoration:none;display:inline-flex;align-items:center;gap:10px;letter-spacing:-.01em}
+.brand svg{width:34px;height:34px;color:var(--accent);flex:none}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand .ch{font-size:2.5rem;line-height:.95}
+.zu{display:block;font-style:normal;letter-spacing:.01em;line-height:1.2}
+.nw{white-space:nowrap}
+.brand .zu{font-size:.95rem;margin-top:3px;color:var(--muted)}
+nav ul{display:flex;gap:clamp(18px,2.6vw,42px);list-style:none;align-items:center}
+nav a:not(.btn){text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.35em;text-decoration-thickness:1.5px;transition:text-decoration-color .3s;font-size:1.2rem}
+nav a:not(.btn):hover{text-decoration-color:currentColor}
+nav .btn{min-height:46px}
+.menu{display:none;background:none;border:0;color:var(--ink);font:500 1.15rem var(--f);min-height:44px;padding:0 4px;cursor:pointer}
+@media(max-width:860px){
+  .menu{display:block;position:relative;z-index:30}
+  nav ul{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;gap:26px;transform:translateY(-100%);transition:transform .5s var(--ease);visibility:hidden}
+  nav ul a:not(.btn){font-size:2.4rem;font-style:italic}
+  nav ul.open{transform:none;visibility:visible}
+}
+
+/* Hero */
+.hero{padding-top:clamp(30px,5vw,80px);padding-bottom:clamp(80px,10vw,180px)}
+.hero h1{max-width:16ch}
+.hero .txt{display:grid;gap:26px;align-content:start;padding-top:clamp(16px,3vw,60px)}
+.hero .lead{font-size:clamp(1.4rem,1.15rem + .9vw,1.9rem);line-height:1.3}
+.hero .pic{aspect-ratio:16/10;margin-top:clamp(24px,4vw,0px)}
+@media(min-width:900px){
+  .hero h1{grid-column:1/11}
+  .hero .txt{grid-column:1/5;grid-row:2}
+  .hero .pic{grid-column:5/13;grid-row:2;margin-top:clamp(0px,1vw,16px)}
+}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Über uns */
+.about .p1{aspect-ratio:3/4}
+.about .p2{aspect-ratio:1/1}
+.about .tx{display:grid;gap:22px;align-content:start}
+.about .lead{font-size:clamp(1.8rem,1.2rem + 2.2vw,3rem);line-height:1.12;font-style:italic;max-width:18ch;letter-spacing:-.015em}
+.promise{display:grid;gap:14px;margin-top:14px}
+.promise h3{font-size:1.55rem;font-style:italic}
+.promise p{color:var(--muted)}
+@media(min-width:900px){
+  .about .p1{grid-column:2/6;margin-top:120px;grid-row:1/3}
+  .about .tx{grid-column:7/12;grid-row:1}
+  .about .p2{grid-column:9/12;grid-row:2;align-self:start;margin-top:30px}
+}
+
+/* Finder */
+.finder{background:var(--surface)}
+.finder .head{margin-bottom:clamp(40px,6vw,90px)}
+.opts{display:flex;flex-wrap:wrap;gap:10px;border:0}
+.opts legend{font-size:1.3rem;margin-bottom:16px;color:var(--muted)}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opts span{display:inline-flex;align-items:center;min-height:54px;padding:0 24px;background:var(--bg);font-size:1.25rem;transition:background .3s,color .3s,transform .4s var(--ease)}
+.opts label:hover span{transform:translateY(-2px)}
+.opts input:checked+span{background:var(--ink);color:var(--bg)}
+.opts input:focus-visible+span{outline:3px solid var(--accent);outline-offset:3px}
+.res{margin-top:46px;display:grid;gap:30px}
+.res figure{aspect-ratio:3/2}
+.res figure img{transition:opacity .5s}
+.res h3{font-size:clamp(2.2rem,1.4rem + 3vw,4rem);font-style:italic;margin-bottom:16px}
+.res .meta{font-size:1.3rem;color:var(--muted);margin:14px 0 26px}
+@media(min-width:900px){
+  .res{grid-template-columns:repeat(12,1fr);gap:var(--gap);align-items:end}
+  .res figure{grid-column:1/7}
+  .res .rt{grid-column:8/12}
+}
+.finder .head h2{max-width:16ch}
+
+/* Behandlungen */
+.treat .head{margin-bottom:clamp(30px,5vw,70px)}
+.row3{display:grid;gap:8px 30px;padding:28px 20px;margin-inline:-20px;transition:background .4s,padding .45s var(--ease)}
+.row3:hover{background:var(--surface);padding-left:36px}
+.row3 h3{font-size:clamp(2rem,1.3rem + 2.4vw,3.4rem);font-style:italic}
+.row3 .pr{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.4rem);color:var(--accent);line-height:1.1}
+.row3 .du{color:var(--muted)}
+@media(min-width:620px) and (max-width:899px){
+  .row3{grid-template-columns:1fr auto;align-items:baseline}
+  .row3 p{grid-column:1/-1}.row3 .du{grid-column:1/-1}
+  .row3 .pr{grid-column:2;grid-row:1}
+}
+@media(min-width:900px){
+  .row3{grid-template-columns:5fr 4fr 3fr;align-items:baseline}
+  .row3 .pr{text-align:right}
+  .row3 .du{grid-column:2;grid-row:2}
+  .row3 p{grid-column:2;grid-row:1}
+  .row3 h3{grid-row:1/3}
+  .row3 .pr{grid-column:3;grid-row:1/3}
+}
+.treat .note{margin-top:30px;color:var(--muted)}
+
+/* Galerie */
+.gal .a{aspect-ratio:3/4}.gal .b{aspect-ratio:16/10}.gal .c{aspect-ratio:1/1}
+@media(min-width:900px){
+  .gal .h{grid-column:6/12;grid-row:1}
+  .gal .a{grid-column:1/5;grid-row:1/4;margin-top:70px}
+  .gal .b{grid-column:6/12;grid-row:2}
+  .gal .c{grid-column:8/11;grid-row:3;margin-top:50px}
+}
+.gal .h{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.gal .h h2{max-width:11ch}
+.gal figure img{transition:transform 1.4s var(--ease)}
+.gal figure:hover img{transform:scale(1.04)}
+.sm{max-width:34ch;color:var(--muted)}
+@media(max-width:899px){
+  .gal .a{width:84%}.gal .b{width:80%;margin-left:auto}.gal .c{width:58%;margin-left:8%}
+  .hero .pic{margin-left:auto;width:94%}
+  .about .p1{width:88%}.about .p2{width:56%;margin-left:auto}
+}
+
+/* Gutschein */
+.voucher{background:var(--surface);padding:clamp(30px,5vw,80px);display:grid;gap:40px;position:relative}
+.voucher .vt{font-size:clamp(2.6rem,1.4rem + 4.4vw,5.6rem);font-style:italic;line-height:.95;letter-spacing:-.02em;max-width:12ch}
+.voucher svg{width:clamp(70px,10vw,150px);height:auto;color:var(--accent)}
+.voucher .vl{display:grid;gap:36px}
+.voucher .vb{display:flex;gap:20px;justify-content:space-between;align-items:end;flex-wrap:wrap}
+.voucher .vb p{max-width:36ch}
+@media(min-width:900px){
+  .voucher{grid-template-columns:7fr 5fr;gap:var(--gap)}
+  .voucher .vl{display:grid;gap:50px}
+  .voucher .vr{display:grid;justify-items:end;align-content:space-between}
+}
+
+/* Zeiten Anfahrt */
+.info .h3t{font-size:clamp(2rem,1.2rem + 2.4vw,3.2rem);font-style:italic;margin-bottom:30px}
+.tt{width:100%;border-collapse:collapse;font-size:1.3rem}
+.tt th,.tt td{padding:15px 16px;text-align:left;font-weight:400}
+.tt td{text-align:right;white-space:nowrap}
+.info .g{row-gap:80px}
+.tt tr:nth-child(odd){background:var(--surface)}
+.map{aspect-ratio:4/3;position:relative;background:var(--surface);overflow:hidden;margin-bottom:24px}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map span{position:absolute;left:14px;bottom:14px;background:var(--bg);padding:8px 14px;font-size:1.05rem}
+address{font-style:normal}
+@media(min-width:900px){
+  .info .zt{grid-column:2/6}
+  .info .an{grid-column:7/12}
+}
+
+/* Fragen und Kontakt */
+.faq details{background:var(--surface);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;padding:20px 24px;display:flex;justify-content:space-between;gap:20px;min-height:64px;align-items:center;font-size:1.45rem;font-style:italic}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-style:normal;color:var(--accent);font-size:1.8rem;transition:transform .4s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 24px 24px;color:var(--muted);max-width:56ch}
+.fq h2{margin-bottom:34px;max-width:12ch}
+@media(min-width:900px){.fq .fh{grid-column:2/6}.fq .fl{grid-column:7/12}}
+.kontakt{background:var(--ink);color:var(--bg)}
+.kontakt .tl{color:#e8b64f}
+.kontakt h2{max-width:11ch;margin-bottom:30px}
+.kontakt .btn{background:#e8b64f;color:#26241d}
+.kontakt .btn:hover{background:#f5c768}
+.kontakt .btn.line{background:transparent;color:var(--bg);box-shadow:inset 0 0 0 2px var(--bg)}
+.kontakt .btn.line:hover{background:var(--bg);color:var(--ink)}
+.chan{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+form{display:grid;gap:18px}
+label.f{display:grid;gap:6px;font-size:1.1rem;color:#cfcbc0}
+.f input,.f select,.f textarea{font:400 1.2rem var(--f);color:var(--bg);background:#ffffff14;border:0;border-bottom:2px solid #e4e1da88;border-radius:0;padding:14px;min-height:54px;width:100%}
+.f select option{color:#26241d}
+.f textarea{min-height:110px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-bottom-color:#e8b64f;background:#ffffff22}
+@media(min-width:900px){.kontakt .kl{grid-column:1/6}.kontakt .kr{grid-column:7/12}}
+
+footer{background:var(--bg);padding:clamp(60px,8vw,120px) var(--m) 30px}
+footer .big{color:var(--accent);margin-bottom:50px}
+footer .big .ch{display:block;font-size:clamp(6rem,30vw,26rem);font-style:italic;line-height:.85;letter-spacing:-.04em}
+footer .big .zu{font-size:clamp(1.3rem,.8rem + 2.2vw,2.6rem);margin-top:clamp(8px,1.5vw,18px)}
+footer .cols{display:flex;justify-content:space-between;gap:24px 60px;flex-wrap:wrap}
+footer ul{list-style:none;display:flex;gap:26px;flex-wrap:wrap;margin-bottom:16px}
+footer p{color:var(--muted);font-size:1.1rem;max-width:56ch}
+
+.js [data-r]{opacity:0;transform:translateY(28px)}
+.js [data-r].in{opacity:1;transform:none;transition:opacity 1.1s var(--ease) var(--d,0ms),transform 1.1s var(--ease) var(--d,0ms)}
+[data-par] img{height:114%;will-change:transform}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js [data-r]{opacity:1;transform:none}
+  [data-par] img{height:100%}
+  .trk{animation:none}
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="lotus" viewBox="0 0 64 64"><g fill="currentColor"><ellipse cx="32" cy="30" rx="6" ry="17"/><ellipse cx="32" cy="30" rx="6" ry="17" transform="rotate(38 32 48)"/><ellipse cx="32" cy="30" rx="6" ry="17" transform="rotate(-38 32 48)"/><ellipse cx="32" cy="34" rx="5" ry="13" transform="rotate(72 32 50)"/><ellipse cx="32" cy="34" rx="5" ry="13" transform="rotate(-72 32 50)"/></g></symbol>
+</svg>
+<a class="sr" href="#inhalt">Zum Inhalt springen</a>
+<header>
+  <a class="brand" href="#" aria-label="Chuan Thai- und Gesundheitsmassagen"><svg aria-hidden="true"><use href="#lotus"/></svg><span class="wm"><span class="ch" data-name>Chuan</span><span class="zu"><span class="nw">Thai- und</span> <span class="nw">Gesundheitsmassagen</span></span></span></a>
+  <nav aria-label="Hauptmenü">
+    <button class="menu" aria-expanded="false" aria-controls="nav-liste">Menü</button>
+    <ul id="nav-liste">
+      <li><a href="#behandlungen">Behandlungen</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#gutscheine">Gutscheine</a></li>
+      <li><a href="#anfahrt">Anfahrt</a></li>
+      <li><a class="btn" href="#kontakt">Termin anfragen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inhalt">
+<section class="hero wrap" aria-labelledby="titel">
+  <div class="g">
+    <h1 id="titel" data-r>thai-massage von hand</h1>
+    <div class="txt" data-r style="--d:120ms">
+      <p class="lead">Traditionell, bekleidet auf der Matte, mit Zeit für Sie. In Eisenhüttenstadt.</p>
+      <div class="row"><a class="btn" href="#kontakt">Termin anfragen</a><a class="btn line" href="#behandlungen">Behandlungen</a></div>
+    </div>
+    <figure class="pic" data-par data-r style="--d:200ms"><img src="bilder/huegel.svg" width="1600" height="1000" alt="Gezeichnete Hügellandschaft mit Chedis und Sonne" fetchpriority="high"></figure>
+  </div>
+</section>
+
+<div class="tick" aria-hidden="true"><div class="trk">
+  <span>Thai-Massage</span><svg><use href="#lotus"/></svg><span>Öl-Massage</span><svg><use href="#lotus"/></svg><span>Fußmassage</span><svg><use href="#lotus"/></svg><span>Kräuterstempel</span><svg><use href="#lotus"/></svg><span>Paar-Massage</span><svg><use href="#lotus"/></svg>
+  <span>Thai-Massage</span><svg><use href="#lotus"/></svg><span>Öl-Massage</span><svg><use href="#lotus"/></svg><span>Fußmassage</span><svg><use href="#lotus"/></svg><span>Kräuterstempel</span><svg><use href="#lotus"/></svg><span>Paar-Massage</span><svg><use href="#lotus"/></svg>
+</div></div>
+
+<section class="about wrap" id="ueber-uns" aria-labelledby="h-ueber">
+  <h2 id="h-ueber" class="sr">Über uns</h2>
+  <div class="g">
+    <figure class="p1" data-par data-r><img src="bilder/tor.svg" width="900" height="1200" loading="lazy" alt="Gezeichnetes Tor mit gestuftem Dach und Blick auf einen Chedi"></figure>
+    <div class="tx">
+      <p class="lead" data-r>Die Hände wissen, wo es drückt.</p>
+      <p data-r style="--d:80ms">[Name der Inhaberin] kommt aus Thailand und hat die Thai-Massage [in Ort / bei Lehrer] gelernt. In Eisenhüttenstadt gibt sie sie weiter, wie sie zu Hause gegeben wird: mit Druck, Dehnung und viel Ruhe.</p>
+      <p data-r style="--d:140ms">[Platzhalter: Ein bis zwei Sätze zu Ausbildung, Erfahrung und der Idee hinter dem Laden.]</p>
+      <div class="promise" data-r style="--d:200ms">
+        <div><h3>Bekleidet auf der Matte</h3><p>Bequeme Kleidung genügt, wir stellen sie auf Wunsch.</p></div>
+        <div><h3>Zeit zum Ankommen</h3><p>Tee, gedämpftes Licht, frische Wäsche.</p></div>
+      </div>
+    </div>
+    <figure class="p2" data-par data-r style="--d:100ms"><img src="bilder/orchidee-weiss.svg" width="1000" height="1000" loading="lazy" alt="Gezeichneter Zweig mit weißen Orchideen"></figure>
+  </div>
+</section>
+
+<section class="finder" id="behandlungen" aria-labelledby="h-beh">
+  <div class="wrap">
+    <div class="head g"><h2 id="h-beh" data-r style="grid-column:1/-1">was tut ihnen gut?</h2></div>
+    <fieldset class="opts" data-r>
+      <legend>Ich suche …</legend>
+      <label><input type="radio" name="wunsch" value="abschalten" checked><span>Ruhe zum Abschalten</span></label>
+      <label><input type="radio" name="wunsch" value="verspannt"><span>Hilfe bei Verspannungen</span></label>
+      <label><input type="radio" name="wunsch" value="beine"><span>Erholung für müde Beine</span></label>
+      <label><input type="radio" name="wunsch" value="paar"><span>Zeit zu zweit</span></label>
+    </fieldset>
+    <div class="res" aria-live="polite">
+      <figure><img id="rimg" src="bilder/steine.svg" width="1500" height="1000" alt="Gezeichneter Steinturm vor der Sonne"></figure>
+      <div class="rt">
+        <h3 id="rname">Öl-Massage</h3>
+        <p id="rtext">Warmes Öl, lange, fließende Griffe. Beruhigt den ganzen Körper.</p>
+        <p class="meta" id="rmeta">60 oder 90 Minuten · ab [60] €</p>
+        <a class="btn" href="#kontakt" id="rbtn">Diese Behandlung anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="treat wrap" aria-labelledby="h-alle">
+  <div class="head"><h2 id="h-alle" data-r>alle behandlungen</h2></div>
+  <p class="note" data-r style="margin:0 0 30px">Preise sind Platzhalter, bis die echten Angaben vorliegen.</p>
+  <div>
+    <div class="row3" data-r><h3>Traditionelle Thai-Massage</h3><p>Druck entlang der Energielinien, Dehnungen, tiefe Entspannung.</p><span class="du">60 · 90 · 120 Minuten</span><span class="pr">ab [55] €</span></div>
+    <div class="row3" data-r><h3>Öl-Massage</h3><p>Warmes Öl, lange, fließende Griffe für den ganzen Körper.</p><span class="du">60 · 90 Minuten</span><span class="pr">ab [60] €</span></div>
+    <div class="row3" data-r><h3>Fuß-Massage</h3><p>Reflexzonen, Waden und Fußsohlen für müde Beine.</p><span class="du">30 · 60 Minuten</span><span class="pr">ab [30] €</span></div>
+    <div class="row3" data-r><h3>Rücken und Nacken</h3><p>Gezielt für Schultern, Nacken und Rücken.</p><span class="du">30 · 45 Minuten</span><span class="pr">ab [35] €</span></div>
+    <div class="row3" data-r><h3>Kräuterstempel</h3><p>Warme Kräuterstempel aus Thailand für Muskeln und Gelenke.</p><span class="du">75 · 90 Minuten</span><span class="pr">ab [70] €</span></div>
+    <div class="row3" data-r><h3>Paar-Massage</h3><p>Zwei Matten, ein Raum, für einen besonderen Tag.</p><span class="du">60 · 90 Minuten</span><span class="pr">ab [110] €</span></div>
+  </div>
+</section>
+
+<section class="gal wrap" id="galerie" aria-labelledby="h-gal" style="padding-top:0">
+  <div class="g">
+    <div class="h" data-r><h2 id="h-gal">einblicke</h2><p class="sm">Hier zeigen wir bald Fotos aus unseren Räumen.</p></div>
+    <figure class="a" data-par data-r><img src="bilder/chedis.svg" width="900" height="1200" loading="lazy" alt="Gezeichnete Chedis vor Hügeln und Sonne"></figure>
+    <figure class="b" data-par data-r style="--d:100ms"><img src="bilder/tok-sen.svg" width="1600" height="1000" loading="lazy" alt="Gezeichneter Holzhammer und Holzkeil für die Tok-Sen-Massage"></figure>
+    <figure class="c" data-par data-r><img src="bilder/orchidee-zweig.svg" width="1000" height="1000" loading="lazy" alt="Gezeichneter Orchideenzweig"></figure>
+  </div>
+</section>
+
+<section class="wrap" id="gutscheine" style="padding-top:0" aria-labelledby="h-gut">
+  <div class="voucher" data-r>
+    <div class="vl">
+      <h2 id="h-gut" class="vt">gutschein verschenken</h2>
+      <div class="vb"><p>Gültig für jede Behandlung bei <span data-name>Chuan</span>, [drei Jahre] lang. Wir stellen ihn persönlich aus.</p><a class="btn" href="#kontakt" data-b="Gutschein">Gutschein anfragen</a></div>
+    </div>
+    <div class="vr"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#lotus"/></svg><p style="font-size:clamp(3rem,2rem + 4vw,5.6rem);font-style:italic;line-height:1;color:var(--accent)">[50] €</p></div>
+  </div>
+</section>
+
+<div class="orn" aria-hidden="true" style="margin-inline:var(--m)"></div>
+<section class="info wrap" id="anfahrt" aria-labelledby="h-info" style="padding-top:0">
+  <h2 id="h-info" class="sr">Öffnungszeiten und Anfahrt</h2>
+  <div class="g">
+    <div class="zt" data-r>
+      <h3 class="h3t">Öffnungszeiten</h3>
+      <table class="tt"><caption class="sr">Öffnungszeiten</caption><tbody>
+        <tr><th scope="row">Montag bis Freitag</th><td>[10:00 bis 20:00]</td></tr>
+        <tr><th scope="row">Samstag</th><td>[10:00 bis 18:00]</td></tr>
+        <tr><th scope="row">Sonntag</th><td>[Ruhetag]</td></tr>
+      </tbody></table>
+      <p style="margin-top:16px;color:var(--muted)">Termine auch außerhalb nach Absprache.</p>
+    </div>
+    <div class="an" data-r style="--d:100ms">
+      <h3 class="h3t">So finden Sie uns</h3>
+      <div class="map" role="img" aria-label="Platzhalter für eine Karte">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#d6d2c9"/><path d="M-10 200 L410 140" stroke="#c4bfb3" stroke-width="22"/><path d="M140 -10 L200 310" stroke="#c4bfb3" stroke-width="16"/><path d="M-10 70 L410 100" stroke="#cdc8bd" stroke-width="11"/><path d="M310 -10 L285 310" stroke="#cdc8bd" stroke-width="10"/><circle cx="172" cy="168" r="24" fill="#9c6b0f" opacity=".25"/><circle cx="172" cy="168" r="10" fill="#9c6b0f"/></svg>
+        <span>Kartenansicht folgt</span>
+      </div>
+      <address>Sie finden uns in eigenen Räumen im Freizeit Point<br>Fährstraße 41<br>15890 Eisenhüttenstadt</address>
+      <p style="margin-top:14px"><a class="btn line" href="https://maps.app.goo.gl/QRPTqpLe9PgMzVeg9" target="_blank" rel="noopener">Route in Google Maps</a></p>
+      <p style="color:var(--muted);margin-top:8px">[Etage / Eingang im Haus, Haltestelle, Parkplätze]</p>
+    </div>
+  </div>
+</section>
+
+<section class="fq wrap" aria-labelledby="h-faq" style="padding-top:0">
+  <div class="g">
+    <div class="fh" data-r><h2 id="h-faq">gut zu wissen</h2></div>
+    <div class="fl faq" data-r style="--d:100ms">
+      <details><summary>Was ziehe ich an?</summary><p>Bequeme, weite Kleidung. Die Thai-Massage wird bekleidet gegeben, auf Wunsch stellen wir Kleidung.</p></details>
+      <details><summary>Wie lange sollte ich einplanen?</summary><p>Für die klassische Thai-Massage empfehlen wir mindestens 60 Minuten, plus ein paar Minuten zum Ankommen.</p></details>
+      <details><summary>Welche Massagen bieten Sie an?</summary><p>Ausschließlich klassische Thai-Massage und Wellness-Behandlungen. Erotische Massagen oder sexuelle Dienstleistungen gehören nicht zu unserem Angebot.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap g">
+    <div class="kl">
+      <h2 id="h-kontakt" data-r>wir freuen uns auf sie</h2>
+      <p data-r>Rufen Sie an, schreiben Sie bei WhatsApp oder nutzen Sie das Formular. Wir antworten so schnell wie möglich.</p>
+      <div class="chan" data-r>
+        <a class="btn" href="tel:+490000000000">Anrufen [0000 000000]</a>
+        <a class="btn line" href="https://wa.me/490000000000" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <form class="kr" id="form" data-r style="--d:100ms">
+      <label class="f">Ihr Name<input name="name" autocomplete="name" required></label>
+      <label class="f">Behandlung
+        <select name="beh" id="beh"><option>Traditionelle Thai-Massage</option><option>Öl-Massage</option><option>Fuß-Massage</option><option>Rücken und Nacken</option><option>Kräuterstempel</option><option>Paar-Massage</option><option>Gutschein</option></select>
+      </label>
+      <label class="f">Wunschtermin<input name="termin" placeholder="z. B. Samstag Vormittag"></label>
+      <label class="f">Nachricht<textarea name="msg"></textarea></label>
+      <div><button class="btn" type="submit">Anfrage per E-Mail senden</button></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="big" aria-hidden="true"><span class="ch" data-name>Chuan</span><span class="zu"><span class="nw">Thai- und</span> <span class="nw">Gesundheitsmassagen</span></span></div>
+  <div class="cols">
+    <div>
+      <ul><li><a class="tl" href="#" title="Platzhalter">Impressum</a></li><li><a class="tl" href="#" title="Platzhalter">Datenschutz</a></li></ul>
+      <p>© <span data-name>Chuan</span> Thai- und Gesundheitsmassagen · Beispielentwurf mit Platzhaltern</p>
+    </div>
+    <p>Hinweis: Wir bieten ausschließlich klassische Thai-Massage und Wellness an. Erotische Massagen oder sexuelle Dienstleistungen sind nicht Teil unseres Angebots.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var LADENNAME = 'Chuan';      /* Kurzform für Fließtext; der volle Name steht in LADENVOLL */           /* HIER den Ladennamen ersetzen */
+  var LADENVOLL = 'Chuan Thai- und Gesundheitsmassagen';  /* voller Name, Schreibweise genau so */
+  var MAIL = 'info@example.org';     /* Platzhalter-Adresse */
+  var d = document;
+  d.documentElement.classList.add('js');
+  d.querySelectorAll('[data-name]').forEach(function(n){ n.textContent = LADENNAME; });
+  d.title = LADENVOLL + ' – Traditionelle Thai-Massage in Eisenhüttenstadt';
+
+  var btn = d.querySelector('.menu'), ul = d.getElementById('nav-liste');
+  btn.addEventListener('click', function(){ var o = ul.classList.toggle('open'); btn.setAttribute('aria-expanded', o); btn.textContent = o ? 'Schließen' : 'Menü'; });
+  ul.addEventListener('click', function(e){ if(e.target.closest('a')){ ul.classList.remove('open'); btn.setAttribute('aria-expanded', false); btn.textContent='Menü'; } });
+
+  var els = d.querySelectorAll('[data-r]');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.1, rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  } else els.forEach(function(e){ e.classList.add('in'); });
+
+  /* Bilder gleiten ruhig mit dem Scrollen */
+  var par = d.querySelectorAll('[data-par] img');
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches && par.length){
+    var tick = false;
+    function move(){
+      tick = false; var vh = innerHeight;
+      par.forEach(function(im){
+        var r = im.parentNode.getBoundingClientRect();
+        if(r.bottom < -50 || r.top > vh + 50) return;
+        var p = ((r.top + r.height/2) - vh/2) / vh;            /* -1 .. 1 */
+        var shift = Math.max(-1, Math.min(1, p)) * (im.parentNode.clientHeight * .07);
+        im.style.transform = 'translateY(' + (-shift - im.parentNode.clientHeight*.03).toFixed(1) + 'px)';
+      });
+    }
+    addEventListener('scroll', function(){ if(!tick){ tick = true; requestAnimationFrame(move); } }, {passive:true});
+    addEventListener('resize', move); move();
+  }
+
+  /* Finder */
+  var R = {
+    abschalten:{img:'steine.svg',alt:'Gezeichneter Steinturm vor der Sonne',n:'Öl-Massage',t:'Warmes Öl, lange, fließende Griffe. Beruhigt den ganzen Körper.',m:'60 oder 90 Minuten · ab [60] €',b:'Öl-Massage'},
+    verspannt:{img:'sen-linien.svg',alt:'Gezeichnete Energielinien, die sich in einem Punkt treffen',n:'Traditionelle Thai-Massage',t:'Druck entlang der Energielinien und sanfte Dehnungen lösen Verspannungen.',m:'60, 90 oder 120 Minuten · ab [55] €',b:'Traditionelle Thai-Massage'},
+    beine:{img:'fussbad.svg',alt:'Gezeichnete Schale mit warmem Wasser und Lotus',n:'Fuß-Massage',t:'Reflexzonen, Waden und Fußsohlen. Die Pause für müde Beine.',m:'30 oder 60 Minuten · ab [30] €',b:'Fuß-Massage'},
+    paar:{img:'lotus-paar.svg',alt:'Zwei gezeichnete Lotusblüten auf dem Wasser',n:'Paar-Massage',t:'Zwei Matten in einem Raum. Zum Geburtstag, Jahrestag oder einfach so.',m:'60 oder 90 Minuten · ab [110] €',b:'Paar-Massage'}
+  };
+  var cur = 'abschalten';
+  function setR(k){
+    cur = k; var o = R[k], im = d.getElementById('rimg');
+    im.style.opacity = 0;
+    setTimeout(function(){ im.src = 'bilder/' + o.img; im.alt = o.alt; im.style.opacity = 1; }, 220);
+    d.getElementById('rname').textContent = o.n; d.getElementById('rtext').textContent = o.t; d.getElementById('rmeta').textContent = o.m;
+  }
+  d.querySelectorAll('input[name=wunsch]').forEach(function(r){ r.addEventListener('change', function(){ setR(r.value); }); });
+  d.getElementById('rbtn').addEventListener('click', function(){ d.getElementById('beh').value = R[cur].b; });
+  d.querySelectorAll('[data-b]').forEach(function(a){ a.addEventListener('click', function(){ d.getElementById('beh').value = a.dataset.b; }); });
+
+  d.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault(); var f = e.target;
+    var body = 'Name: '+f.name.value+'\nBehandlung: '+f.beh.value+'\nWunschtermin: '+f.termin.value+'\n\n'+f.msg.value;
+    location.href = 'mailto:'+MAIL+'?subject='+encodeURIComponent('Terminanfrage '+LADENVOLL)+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
