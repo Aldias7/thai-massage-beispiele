@@ -27,15 +27,21 @@ def stirn_retusche(c, cx=264, cy=237, r=11, dy=-30, dx=-6):
     m=(m*m*(3-2*m))[...,None]
     return Image.fromarray(np.clip(a*(1-m)+fill*m,0,255).astype(np.uint8))
 
-def farben(c, sat_blau=1.30, sat_gruen=1.38, kontrast=1.03):
+def farben(c, sat_blau=1.55, sat_gruen=1.70, hell_gruen=1.07, kontrast=1.06):
+    # Fassung 2 (27.11.): Gruen/Blau deutlich kraeftiger, Gruen heller, Haut und Lichter geschuetzt
     hsv=np.asarray(c.convert('HSV')).astype(np.float32)   # H 0..255 = 0..360 Grad
     h=hsv[...,0]*360/255
     def band(lo,hi,f=15):                              # weicher Hue-Bereich
         return np.clip(np.minimum(h-lo,hi-h)/f+0.5,0,1)
-    gain=1+(sat_gruen-1)*band(65,170)+(sat_blau-1)*band(175,265)
+    bg=band(65,170); bb=band(175,265)
+    gain=1+(sat_gruen-1)*bg+(sat_blau-1)*bb
     hsv[...,1]=np.clip(hsv[...,1]*gain,0,255)
+    hsv[...,2]=np.clip(hsv[...,2]*(1+(hell_gruen-1)*bg*np.clip(hsv[...,1]/90,0,1)),0,255)   # nur satte Gruentoene heller
     out=np.asarray(Image.fromarray(hsv.astype(np.uint8),'HSV').convert('RGB')).astype(np.float32)
-    out=128+(out-128)*kontrast                         # leichter Kontrast um Mittelgrau
+    lum=out.mean(2,keepdims=True)
+    skin=np.clip((50-np.where(h>300,360-h,h))/15+0.5,0,1)[...,None]*np.clip(hsv[...,1:2]/40,0,1)
+    k=1+(kontrast-1)*(1-skin)*np.clip((250-lum)/50,0,1)   # keine Wirkung auf Haut und fast weisse Lichter
+    out=128+(out-128)*k
     return Image.fromarray(np.clip(out,0,255).astype(np.uint8))
 
 c=farben(stirn_retusche(c))
