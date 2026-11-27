@@ -1,0 +1,200 @@
+[
+ {
+  "seite": "auswahl",
+  "ansicht": "handy",
+  "n": 3,
+  "bad": [],
+  "scrollW": 390,
+  "clientW": 390,
+  "h": 2348,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "auswahl",
+  "ansicht": "desktop",
+  "n": 3,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 1693,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "auswahl",
+  "ansicht": "desktop-reduced",
+  "n": 3,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 1693,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-1",
+  "ansicht": "handy",
+  "n": 8,
+  "bad": [],
+  "scrollW": 390,
+  "clientW": 390,
+  "h": 9675,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-1",
+  "ansicht": "desktop",
+  "n": 8,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 8921,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-1",
+  "ansicht": "desktop-reduced",
+  "n": 8,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 8921,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Jost"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-2",
+  "ansicht": "handy",
+  "n": 9,
+  "bad": [],
+  "scrollW": 390,
+  "clientW": 390,
+  "h": 9279,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Newsreader",
+   "Newsreader"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-2",
+  "ansicht": "desktop",
+  "n": 9,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 10014,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Newsreader",
+   "Newsreader"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-2",
+  "ansicht": "desktop-reduced",
+  "n": 9,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 10014,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "Newsreader",
+   "Newsreader"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-3",
+  "ansicht": "handy",
+  "n": 7,
+  "bad": [],
+  "scrollW": 390,
+  "clientW": 390,
+  "h": 9741,
+  "wide": [],
+  "infinite": 1,
+  "fonts": [
+   "EB Garamond",
+   "EB Garamond"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-3",
+  "ansicht": "desktop",
+  "n": 7,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 10126,
+  "wide": [],
+  "infinite": 1,
+  "fonts": [
+   "EB Garamond",
+   "EB Garamond"
+  ],
+  "horizontal": false,
+  "konsole": []
+ },
+ {
+  "seite": "beispiel-3",
+  "ansicht": "desktop-reduced",
+  "n": 7,
+  "bad": [],
+  "scrollW": 1440,
+  "clientW": 1440,
+  "h": 10126,
+  "wide": [],
+  "infinite": 0,
+  "fonts": [
+   "EB Garamond",
+   "EB Garamond"
+  ],
+  "horizontal": false,
+  "konsole": []
+ }
+]

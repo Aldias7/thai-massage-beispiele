@@ -80,6 +80,9 @@ nav .btn{min-height:44px;padding:0 1.3em}
 .intro{display:grid;gap:48px;grid-template-columns:1fr}
 .intro .txt{display:grid;gap:28px;align-content:start}
 .intro figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.intro figure.chuan{position:relative;border-radius:999px 999px 6px 6px;box-shadow:0 34px 70px -34px #000c}
+.intro figure.chuan img{object-position:42% 22%}
+.intro figure.chuan figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 20px 26px;text-align:center;font-size:1.05rem;letter-spacing:.04em;color:var(--ink);background:linear-gradient(180deg,#1a1c1a00,#1a1c1ae6)}
 .promises{display:grid;gap:26px;margin-top:20px}
 .promises h3{font-size:1.5rem;font-weight:400;letter-spacing:-.01em;margin-bottom:4px}
 .promises p{color:var(--muted)}
@@ -257,7 +260,7 @@ footer small{display:block;margin-top:34px;color:var(--muted)}
       <div data-r><h3>Termine nach Absprache</h3><p>Fragen Sie Ihren Wunschtermin an, wir melden uns zurück.</p></div>
     </div>
   </div>
-  <figure data-r style="--d:100ms"><img src="bilder/farn-knospe.svg" width="1000" height="1250" loading="lazy" alt="Gezeichnete Lotusknospe zwischen Farnblättern vor dem Mond"></figure>
+  <figure class="chuan" data-r style="--d:100ms"><img src="../bilder/chuan-640.webp" srcset="../bilder/chuan-640.webp 640w, ../bilder/chuan-1200.webp 1200w" sizes="(min-width:900px) 40vw, 92vw" width="640" height="800" loading="lazy" alt="Chuan, Inhaberin"><figcaption>Chuan, Ihre Masseurin</figcaption></figure>
 </section>
 
 <section class="treat" id="behandlungen" aria-labelledby="h-beh">

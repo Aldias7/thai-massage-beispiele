@@ -1,4 +1,4 @@
-// Abnahme: rendert jede Seite bei 375 und 1440 px, prüft Bilder, Konsole, waagerechtes Scrollen, Reduced-Motion.
+// Abnahme: rendert jede Seite bei 390 und 1440 px, prüft Bilder, Konsole, waagerechtes Scrollen, Reduced-Motion.
 // Aufruf: node werkzeug/abnahme.mjs [ausgabeordner]
 import { pathToFileURL } from 'node:url';
 import http from 'node:http';
@@ -23,7 +23,7 @@ const names = ['auswahl', 'beispiel-1', 'beispiel-2', 'beispiel-3'];
 const b = await Browser.launch({ width: 1440, height: 900 });
 const report = [];
 for (let i = 0; i < pages.length; i++) {
-  for (const [w, h, mobile, tag, reduced] of [[375, 812, true, 'handy', false], [1440, 900, false, 'desktop', false], [1440, 900, false, 'desktop-reduced', true]]) {
+  for (const [w, h, mobile, tag, reduced] of [[390, 812, true, 'handy', false], [1440, 900, false, 'desktop', false], [1440, 900, false, 'desktop-reduced', true]]) {
     const p = await b.newPage({ width: w, height: h, mobile, reducedMotion: reduced });
     // Windows meldet hier oft "reduzierte Bewegung" schon vom System: ausdrücklich setzen
     await p.send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: reduced ? 'reduce' : 'no-preference' }] });
